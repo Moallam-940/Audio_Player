@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.laith.audioplayer" version="1.0.3" android-versionCode="1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <!-- معلومات أساسية عن التطبيق -->
+    <name>Audio Player</name>
+    <description>
+        A simple audio player application built with web technologies.
+    </description>
+    <author email="laith@example.com" href="http://example.com">
+        Laith
+    </author>
+
+    <!-- الصفحة الرئيسية للتطبيق -->
+    <content src="Audio_Player.html" />
+
+    <!-- الوصول إلى الشبكة -->
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+    <!-- إعدادات خاصة بمنصة أندرويد -->
+    <platform name="android">
+        <!-- مسار الأيقونة وشاشة البداية -->
+        <!-- ملاحظة: يفضل توفير أحجام متعددة لأفضل شكل -->
+        <icon src="logo.png" />
+        <splash src="favicon.png" />
+
+        <!-- إعدادات التفضيلات (Preferences) -->
+        <!-- إخفاء شريط العنوان لجعل التطبيق يبدو بملء الشاشة -->
+        <preference name="Fullscreen" value="true" />
+        
+        <!-- منع التكبير والتصغير عن طريق الإيماءات -->
+        <preference name="DisallowOverscroll" value="true" />
+        <preference name="EnableViewportScale" value="false" />
+
+        <!-- إلغاء تفعيل السحب للتحديث (Pull to Refresh) -->
+        <preference name="PullToRefresh" value="false" />
+        
+        <!-- تثبيت وضع الشاشة (1=افتراضي، يسمح بالدوران) -->
+        <preference name="Orientation" value="default" />
+        
+        <!-- إخفاء مؤشر التحميل الافتراضي -->
+        <preference name="ShowSplashScreenSpinner" value="false" />
+
+    </platform>
+
+</widget>
